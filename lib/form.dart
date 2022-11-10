@@ -245,7 +245,7 @@ class _MyFormPageState extends State<MyFormPage> {
                                                                         child: Column(
                                                                             crossAxisAlignment: CrossAxisAlignment.start,
                                                                             children: [
-                                                                                Text('Nama Lengkap : $_namaLengkap'),
+                                                                                Text('Nama Lengkap : ' + _namaLengkap),
                                                                                 SizedBox(height: 10),
                                                                                 if (jenjangDiploma)...[
                                                                                     Text('Jenjang : Diploma'),

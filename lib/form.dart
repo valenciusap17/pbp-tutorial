@@ -232,32 +232,39 @@ class _MyFormPageState extends State<MyFormPage> {
                                                                 padding: const EdgeInsets.only(top:20, bottom: 20),
                                                                 shrinkWrap: true,
                                                                 children: <Widget>[
-                                                                    Column(
-                                                                        mainAxisAlignment: MainAxisAlignment.start,
-                                                                        children: [
-                                                                            Text('Informasi Data User', 
+                                                                    const Center( child:
+                                                                        Text(
+                                                                            'Informasi Data User',
                                                                             style: TextStyle(
-                                                                                    fontSize: 20,
-                                                                                )
-                                                                            ),
-                                                                            Text('Nama Lengkap: $_namaLengkap'),
-                                                                            if (jenjangDiploma)...[
-                                                                                Text('Jenjang: Diploma'),
-                                                                            ] else if (jenjangDoktor)...[
-                                                                                Text('Jenjang: Doktor'),
-                                                                            ] else if (jenjangMagister)...[
-                                                                                Text('Jenjang: Magister'),
-                                                                            ] else...[
-                                                                                Text('Jenjang: Sarjana'),
-                                                                            ],
-                                                                            Text('Umur: $umur'),
-                                                                            Text('Kelas: $kelasPBP'),
-                                                                        ],
+                                                                                fontSize:20,
+                                                                            )
+                                                                        ),
                                                                     ),
+                                                                    const SizedBox(height: 10),
+                                                                    Center(
+                                                                        child: Column(
+                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                            children: [
+                                                                                Text('Nama Lengkap : $_namaLengkap'),
+                                                                                SizedBox(height: 10),
+                                                                                if (jenjangDiploma)...[
+                                                                                    Text('Jenjang : Diploma'),
+                                                                                ] else if (jenjangDoktor)...[
+                                                                                    Text('Jenjang : Doktor'),
+                                                                                ] else if (jenjangMagister)...[
+                                                                                    Text('Jenjang : Magister'),
+                                                                                ] else...[
+                                                                                    Text('Jenjang : Sarjana'),
+                                                                                ],
+                                                                                SizedBox(height: 10),
+                                                                                Text('Umur: $umur'),
+                                                                                SizedBox(height: 10),
+                                                                                Text('Kelas: $kelasPBP'),
+                                                                                SizedBox(height: 20),
+                                                                            ],
+                                                                        ),
+                                                                    ),                                                                                                                                                                                                                                                        
                                                                     
-                                                                    
-                                                                    
-                                                                    SizedBox(height: 20),
                                                                     TextButton(
                                                                         onPressed: (){
                                                                             Navigator.pop(context);
